@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ine Agresta</title>
+    <link rel="stylesheet" href="pp.css">
+    <script>
+        // JavaScript for smooth scrolling
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll("a[href^='#']");
+            links.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ariful Islam</div>
+            <ul class="menu">
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Biography">Biography</a></li>
+                <li><a href="#Academic info">Academic info</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="text">
+                <h1>Hello,Ariful islam Ayon</h1>
+                <p>
+                    Welcome to my vibrant and development world. I'm a bangladeshi, living in dhaka , now i am working as developer .this is my profession and my aim is to be a software engineer and want to be ideal person, if you interest with me then  you can follow me 
+                </p>
+                <a href="#gallery" class="btn">Check Gallery</a>
+            </div>
+            <div class="image">
+                <img src="image\ariful.jpg" alt="Ine Agresta painting">
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="image\ariful 1.jpg" alt="Art 1">
+                    <p>Eid vibes</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="image\ariful4.jpg" alt="Art 2">
+                    <p>winter </p>
+                </div>
+                <div class="gallery-item">
+                    <img src="image\ariful2.jpg" alt="Art 3">
+                    <p>lake tour</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="image\ariful3.jpg" alt="Art 4">
+                    <p> bike riding</p>
+                </div>
+            </div>
+        </section>
+        <section id="biography">
+            <h2>Biography</h2>
+            <p>
+                Hello, I’m <strong>Ariful Islam</strong>, and I come from the beautiful city of <strong>Pabna</strong>, known for
+                its rich cultural heritage.
+                My father is a businessman, and I am fortunate to have two wonderful sisters who are my pillars of support and
+                inspiration.
+            </p>
+            <p>
+                Growing up in Pabna, I developed a deep appreciation for art, nature, and the simplicity of life. My journey is
+                shaped by the love and support of my family, which has always encouraged me to dream big and pursue my passions.
+            </p>
+            <p>
+                Through this website, I share my work, thoughts, and aspirations, hoping to inspire and connect with others. Thank
+                you for being a part of my journey!
+            </p>
+            <!-- Add story content -->
+        </section>
+        <section id="Academic info">
+            <h2>Academic info</h2>
+            <p>SSC: Shahid AM Monsur Ali High School Pabna<br>
+            Group:Science<br>
+        GPA:5.00</p>
+        <p>HSC: Qadirabad Cantonment Sapper College ,Nator<br>
+            Group:Science<br>
+            GPA:4.78</p>
+            <p>BSC: Daffodil International University<br>
+               Department of Computer Science and Engineering<br>
+                CGPA:3.30</p>
+            <!-- Add store content -->
+        </section>
+        <section id="contact">
+            <h2>contact</h2>
+            <p>Gmail: ariful15-3741@diu.edu.bd<br>
+            Phone:01784-458512
+        </p>
+            <!-- Add contact form or details -->
+        </section>
+    </main>
+</body>
+
+</html>
